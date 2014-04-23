@@ -109,21 +109,21 @@ CKEDITOR.skin.chameleon = function() {
 (function() {
 		// The available icons. This list must match the file names (without
 		// extension) available inside the "icons" folder.
-		var icons = ( 'about,autocorrect,bgcolor,bidiltr,bidirtl,' +
-			'bold,bulletedlist-rtl,bulletedlist,copy-rtl,copy,' +
-			'cut-rtl,cut,find-rtl,find,' +
-			'indent-rtl,' +
+		var icons = ( 'about,anchor-rtl,anchor,autocorrect,bgcolor,bidiltr,bidirtl,blockquote,' +
+			'bold,bulletedlist-rtl,bulletedlist,button,checkbox,copy-rtl,copy,' +
+			'cut-rtl,cut,docprops-rtl,docprops,find-rtl,find,form,' + //TODO creatediv,flash,
+			'hiddenfield,horizontalrule,icons,iframe,image,imagebutton,indent-rtl,' +
 			'indent,italic,justifyblock,justifycenter,justifyleft,justifyright,' +
-			'link,numberedlist-rtl,numberedlist,' +
-			'outdent-rtl,outdent,paste-rtl,paste,' +
-			'table,' +
-			'redo-rtl,redo,removeformat,replace,' +
-			'' +
-			'spellchecker,scayt,strike,subscript,' +
-			'superscript,' +
-			'textcolor,underline,undo-rtl,undo,unlink' ).split( ',' );
+			'language,link,mathjax,maximize,newpage-rtl,newpage,numberedlist-rtl,numberedlist,' +
+			'outdent-rtl,outdent,pagebreak-rtl,pagebreak,paste-rtl,paste,' +
+			'pastefromword-rtl,pastefromword,pastetext-rtl,pastetext,preview-rtl,' +
+			'preview,print,radio,redo-rtl,redo,removeformat,replace,save,scayt,' +
+			'select-rtl,select,selectall,showblocks-rtl,showblocks,smiley,' +
+			'sourcedialog-rtl,sourcedialog,source-rtl,source,specialchar,spellchecker,strike,subscript,' +
+			'superscript,table,templates-rtl,templates,textarea-rtl,textarea,' +
+			'textcolor,textfield-rtl,textfield,uicolor,underline,undo-rtl,undo,unlink' ).split( ',' );
 
-		var iconsFolder = CKEDITOR.getUrl( CKEDITOR.skin.path() + 'icons/'/* + ( CKEDITOR.env.hidpi ? 'hidpi/' : '' )*/ );
+		var iconsFolder = CKEDITOR.getUrl( CKEDITOR.skin.path() + 'icons/' + ( CKEDITOR.env.hidpi ? 'hidpi/' : '' ) );
 
 		for ( var i = 0; i < icons.length; i++ ) {
 			CKEDITOR.skin.addIcon( icons[ i ], iconsFolder + icons[ i ] + '.png' );

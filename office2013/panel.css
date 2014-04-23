@@ -119,6 +119,9 @@ is its visual representation:
 	outline: none;
 	display: table;
 	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* The list of panel items. */

@@ -80,11 +80,11 @@ Comments in this file will give more details about each of the above blocks.
 .cke_dialog_title
 {
 	font-size: 13px;
-	cursor: move;
 	position: relative;
 
 	color: #474747;
 	padding: 10px 14px;
+	cursor: default;
 }
 
 /* The outer part of the dialog contants, which contains the contents body
@@ -95,7 +95,7 @@ Comments in this file will give more details about each of the above blocks.
 	overflow: auto;
 	padding: 15px 10px 5px 10px;
 	margin-top: 30px;
-	border-top: 1px solid #bfbfbf;
+	border-top: 1px solid #d4d4d4;
 
 	border-radius: 0 0 3px 3px;
 }
@@ -174,7 +174,7 @@ The .cke_dialog_tab_selected class is appended to the active tab.
 /* The main tabs container. */
 .cke_dialog_tabs
 {
-	height: 24px;
+	height: 25px;
 	display: inline-block;
 	margin: 5px 0 0;
 	position: absolute;
@@ -195,11 +195,12 @@ a.cke_dialog_tab
 	padding: 4px 8px;
 	margin-right: 3px;
 	display: inline-block;
-	cursor: pointer;
+	cursor: default;
+	text-transform: uppercase;
 	line-height: 16px;
 	outline: none;
-	color: #595959;
-	border: 1px solid #bfbfbf;
+	color: #444444;
+	border-bottom-color: #d4d4d4;
 
 	background: #fafafa;
 }
@@ -213,36 +214,16 @@ a.cke_dialog_tab
 /* A hover state of a regular inactive tab. */
 a.cke_dialog_tab:hover
 {
-	background: #ebebeb;
-	background: -moz-linear-gradient(top, #ebebeb 0%, #dfdfdf 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebebeb), color-stop(100%,#dfdfdf));
-	background: -webkit-linear-gradient(top, #ebebeb 0%,#dfdfdf 100%);
-	background: -o-linear-gradient(top, #ebebeb 0%,#dfdfdf 100%);
-	background: -ms-linear-gradient(top, #ebebeb 0%,#dfdfdf 100%);
-	background: linear-gradient(to bottom, #ebebeb 0%,#dfdfdf 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#dfdfdf',GradientType=0 );
+	color: #2b579a;
 }
 
 a.cke_dialog_tab_selected
 {
-	background: #fff;
-	color: #383838;
-	border-bottom-color: #fff;
+	padding: 4px 7px 5px;
+	color: #2b579a;
+	border: 1px solid #d4d4d4;
+	border-bottom: none;
 	cursor: default;
-	filter: none;
-}
-
-/* A hover state for selected tab. */
-a.cke_dialog_tab_selected:hover
-{
-	background: #ededed;
-	background: -moz-linear-gradient(top, #ededed 0%, #ffffff 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#ffffff));
-	background: -webkit-linear-gradient(top, #ededed 0%,#ffffff 100%);
-	background: -o-linear-gradient(top, #ededed 0%,#ffffff 100%);
-	background: -ms-linear-gradient(top, #ededed 0%,#ffffff 100%);
-	background: linear-gradient(to bottom, #ededed 0%,#ffffff 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 );
 }
 
 .cke_hc a.cke_dialog_tab:hover,
@@ -498,8 +479,7 @@ input.cke_dialog_ui_input_text:hover,
 input.cke_dialog_ui_input_password:hover,
 textarea.cke_dialog_ui_input_textarea:hover
 {
-	border: 1px solid #aeb3b9;
-	border-top-color: #a0a6ad;
+	border: 1px solid #a3bde3;
 }
 
 input.cke_dialog_ui_input_text:focus,
@@ -508,7 +488,7 @@ textarea.cke_dialog_ui_input_textarea:focus,
 select.cke_dialog_ui_input_select:focus
 {
 	outline: none;
-	border: 1px solid #A3BDE3;
+	border: 1px solid #3e6db5;
 }
 
 
@@ -841,11 +821,7 @@ tendency that these will be moved to the plugins code in the future.
 	width: 346px;
 	height: 130px;
 	background-color: white;
-	border: 1px solid #aeb3b9;
-
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
+	border: 1px solid #C3CBD0;
 }
 
 .cke_dialog .cke_hand

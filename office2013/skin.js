@@ -54,6 +54,8 @@ CKEDITOR.skin.name = 'office2013';
 //
 // The available browser specific files must be set separately for editor.css
 // and dialog.css.
+CKEDITOR.skin.ua_editor = '';
+CKEDITOR.skin.ua_dialog = '';
 
 // 3. Define the "Chameleon" feature
 // -----------------------------------
@@ -78,7 +80,9 @@ CKEDITOR.skin.name = 'office2013';
 //
 // The "$color" placeholder can be used in the returned string. It'll be
 // replaced with the desired color.
-
+CKEDITOR.skin.chameleon = function() {
+	return '';
+};
 
 // %REMOVE_START%
 
